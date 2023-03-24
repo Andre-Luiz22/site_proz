@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    
+}
+
+:root{
+    --purple: #8cdbe6;
+    --white:#fff;
+    --dark:#1e1c2a;
+
+}
+
+body{
+    
+    background-color: #d5f7fa;
+    display: grid;         /*Estilização do corpo*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow:
+        0px 2.1px 6px rgba(0, 0, 0, 0.022),
+        0px 5.1px 12.2px rgba(0, 0, 0, 0.033),
+        0px 9.6px 19.1px rgba(0, 0, 0, 0.041),    /* Sombreado inferior do menu*/
+        0px 17.2px 27.8px rgba(0, 0, 0, 0.048),
+        0px 32.2px 43.5px rgba(0, 0, 0, 0.054),
+        0px 77px 104px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    background-color: #96c2d9;
+    background-image: linear-gradient(150deg, #96c2d9 4%, #ffffff 100%);
+    transition: all 0.5s;
+    position: fixed;
+    left: 0%;
+}
+
+
+.navigation .logo{
+    color: #127f8d;
+    font-size: 1.7rem;
+    font-weight: 600;  
+    align-items: flex-end;
+    display: inline-flex;
+    width: 50%;                     /*Estilização da div que guarda a logo e o nome do projeto*/
+    height: 100%;
+    
+}
+.text-h3 span{
+    color: #000000;
+
+}
+
+.logo span{
+    color: #000000;
+}
+
+.imglogo{
+    width: 60px;
+    height: 60px;
+    align-items: flex-end;
+    display: inline-flex;
+   }
+
+.foto1{
+    
+    width: 55%;
+    height:75%;
+   
+}
+
+
+
+.navigation ul{
+   
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navigation ul li a{
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5seg;
+    
+}
+
+.navigation ul li a:hover{
+    color: #85bbc2;
+}
+
+.navigation i{
+    cursor: pointer;
+    font-size: 1.5rem;
+
+}
+
+.home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 7%;
+    background-color: rgba(112, 21, 108, 0.133);
+
+}
+
+
+.home-text{
+    max-width: 50rem;
+    padding-top: 13%;
+    padding-bottom: 10%;
+
+}
+
+.text-h3{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #48b2c0;
+}
+
+.texto{
+    font-size: 1.8rem;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.text-h1{
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 2%;
+}
+
+
+.home-btn{
+    padding: 15px 30px;
+    background: #30bacc;
+    color: #000000;
+    border-radius: 10px;
+    font-weight: 15++00;
+    transition: all 0.5s;
+    margin-top: 20px;
+    font-size: 120%;
+    text-transform: uppercase;
+    
+}
+
+.home-btn:hover{
+    background: #84439e;
+}
+
+
+.foto2{
+    background-color: white;
+    margin: 5% 5% 5%;
+    border-radius: 8%;
+}
+
+
+.sobre-texto{
+    display: inline-block;
+    position: absolute;
+    left: 60%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+
+}
+.footer-clean {
+    padding:50px 0;
+    background-color:#fff;
+    color:#4b4c4d;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  @media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
+    }
+  }
+  
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }
+
+  /* Rodapé */
+  footer{
+    background-color: white;
+    padding: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .container{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+  }
+  .row_footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-col{
+    width: 25%;
+    padding: 15px;
+  }
+  .footer-col h3{
+    font-size: 30px;
+    color: #48b2c0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .footer-col ul li{
+    margin: 10px 0;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 300;
+    display: block;
+  }
+  .footer-col ul li a:hover{
+    color: #48b2c0;
+    padding-left: 10px;
+  }
+  .redes_sociais{
+    margin-top: 150px;
+  } 
+  .redes_sociais{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    margin-top: 50px;
+    margin-left: 15px;
+  }

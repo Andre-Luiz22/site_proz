@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+
+
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="=width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style_cadastro.css">
+        <title>Cadastro</title>
+    </head>
+
+    <body>
+        <div class="main-login">
+            
+
+        <!--Parte Direita do Site-->
+
+            <div class="right-login">
+                <div class="card-login">
+                    <div id="msg_erro"></div>
+                    <div id="msg_sucesso"></div>
+                    <h1>Cadastro</h1>
+                    <div class="textfield">
+                        
+                        <label for="usuario">Nome Completo</label>
+                        <input type=" text" oninput="nameValidate()" class="input-required" name="Nome" placeholder="Nome">
+                        <span class="required">*O nome deve conter ao menos 5 caracteres.</span>
+                    </div>
+                    <div class="textfield">
+                        <label for="usuario">E-mail</label>
+                        <input type=" text" oninput="emailValidate()" class="input-required" name="usuario" placeholder="E-mail">
+                        <span class="required">*Digite um email válido.</span>
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" oninput="senhaValidate()" class="input-required" id="input-required" name="senha" placeholder="Senha">
+                        <span class="required">*A sua senha deve ter no mínimo 8 digitos.</span>
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha Novamente</label>
+                        <input type="password" class="input-required" oninput=" repeteSenhaValidate()"  name="senha" placeholder="Senha">
+                        <span class="required">*As senhas devem ser identicas</span>
+                    </div>
+                    <button onclick="cadastrar()" class="btn-login">Cadastre-se</button>
+                </div>
+            </div>
+          <!--Fim Direita do Site-->
+
+          <!--Parte Esquerda do Site-->
+          <div class="left-login">
+            <img src="./img/image_cadastro.svg" class="img" alt="image2">
+        </div>
+    <!--Fim parte Esquerda do Site-->
+        </div>
+        
+        
+        
+
+    </body>
+    
+    <script src="./js/cadastro.js"></script>
+    
+
+</html>

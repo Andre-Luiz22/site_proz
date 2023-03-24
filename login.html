@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="=width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style_login.css">
+        <title>Login</title>
+    </head>
+
+    <body>
+        <div class="main-login">
+        <!--Parte Esquerda do Site-->
+            <div class="left-login">
+                <img src="./img/image_login.svg" class="img" alt="image2">
+            </div>
+        <!--Fim parte Esquerda do Site-->
+
+        <!--Parte Direita do Site-->
+
+            <div class="right-login">
+                <div class="card-login">
+                    <div id="msg_erro"></div>
+                    <h1>Login</h1>
+                    <div class="textfield">
+                        <label for="usuario">E-mail</label>
+                        <input type=" text" id="email" name="usuario" placeholder="E-mail">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Senha">
+                    </div>
+                    <button onclick="logar()" class="btn-login">Login</button>
+                    <button class="btn-login"><a href="./cadastro.html">Cadastre-se</a></button>
+                    <p class="Esqueci"> Esqueci minha senha</p>
+                </div>
+            </div>
+          <!--Fim Direita do Site-->
+        </div>
+        
+        
+        
+
+    </body>
+    
+    <script src="./js/login.js"></script>
+
+</html>
