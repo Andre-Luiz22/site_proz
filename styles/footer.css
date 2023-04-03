@@ -1,0 +1,176 @@
+.footer-clean {
+  padding:50px 0;
+  background-color:#fff;
+  color:#4b4c4d;
+}
+  
+.footer-clean h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+  
+.footer-clean ul {
+  padding:0;
+  list-style:none;
+   line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+  
+.footer-clean ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+  }
+  
+.footer-clean ul a:hover {
+  opacity:1;
+}
+  
+.footer-clean .item.social {
+  text-align:right;
+}
+  
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+  
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align:center;
+  }
+}
+  
+.footer-clean .item.social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin-left:10px;
+  margin-top:22px;
+  color:inherit;
+  opacity:0.75;
+}
+  
+.footer-clean .item.social > a:hover {
+  opacity:0.9;
+}
+  
+@media (max-width:991px) {
+  .footer-clean .item.social > a {
+    margin-top:40px;
+  }
+}
+  
+@media (max-width:767px) {
+  .footer-clean .item.social > a {
+    margin-top:10px;
+  }
+}
+  
+.footer-clean .copyright {
+  margin-top:14px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+}
+
+  /* Rodapé */
+footer{
+  background-color: white;
+  padding: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+  max-width: 1400px;
+  padding: 0 4%;
+  margin: auto;
+}
+.row_footer{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footer-col{
+  width: 25%;
+}
+.footer-col h3{
+  font-size: 30px;
+  color: #48b2c0;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+}
+.footer-col ul li{
+  margin: 10px 0;
+}.footer-col ul li a{
+  width: fit-content;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 300;
+  display: block;
+}
+.footer-col ul li a:hover{
+  color: #48b2c0;
+  padding-left: 10px;
+ }
+.redes_sociais{
+  margin-top: 150px;
+} 
+.redes_sociais{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  margin-top: 50px;
+  margin-left: 15px;
+}
+
+
+
+ @media screen and (max-width: 1024px) {
+
+  .redes_sociais__div {
+    margin-left: 5%;
+  }
+
+    .redes_sociais {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 15%;
+    bottom: 0;
+  }
+    
+}
+
+@media screen and (max-width: 650px){
+
+  
+  .redes_sociais__div {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: fit-content;
+  }
+
+  .footer-col {
+    display: none;
+  }
+}

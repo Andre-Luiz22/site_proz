@@ -1,0 +1,14 @@
+@import url(./styles/header.css);
+@import url(./styles/main_index.css);
+@import url(./styles/main2_index.css);
+@import url(./styles/footer.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body,html {
+    background-color: #d5f7fa;
+    width: 100%;
+    height: 100%;
+}

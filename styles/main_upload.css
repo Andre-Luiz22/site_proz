@@ -1,0 +1,90 @@
+/*Espaçamento do main*/
+.content {
+    padding-top: 15vh;
+}
+
+/*Configuração da parte esquerda do site*/
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.text {
+    border: .5px dotted #000;
+    padding: 8rem 4rem;
+}
+
+.titulo{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #127f8d;
+  }
+
+.subtitulo {
+    font-size: 1.5rem;
+}
+/* Div que contem o imput e a label*/
+.upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+/*Configuração input*/
+input[type="file"] {
+    display: none;
+    background-color: #127f8d;
+    height: 250px;
+}
+
+label {
+    background-color: #30bacc;
+    color: #000;
+    border-radius: 10px;
+    padding: 1.5rem 3.8rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+label:hover {
+    color: #85bbc2;
+    background-color: #84439e;
+}
+
+/*Configuração da imagem*/
+
+.content__img {
+    width: 40%;
+}
+
+.logado {
+ display: flex;
+ gap: 5%;
+ align-items: center;
+
+}
+
+.fa-solid {
+    margin-right: 7px;
+    font-size: 20px;
+}
+
+
+/*Parte responsiva*/
+
+@media screen and (max-width: 1024px) {
+    .text {
+        border: none;
+    }
+    
+}
+
+@media screen and (max-width: 590px) {
+    .content__img {
+        display: none;
+    }
+    
+}

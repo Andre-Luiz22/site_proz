@@ -3,64 +3,86 @@
 
 
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="=width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style_cadastro.css">
-        <title>Cadastro</title>
-    </head>
 
-    <body>
-        <div class="main-login">
-            
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="=width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/cadastro.css">
+    <link rel="shortcut icon" href="./img/imagem3.ico" type="image/x-icon">
+    <title>Bliitz - Cadastro</title>
+</head>
+
+<body>
+
+<!-- Parte Superior do site -->
+    <header class="menu">
+        <div class="menu__logo">
+            <img class="menu__logo__img" src="img/imagem3.png">
+            <a href="index.html" class="menu__logo__titulo"><span>B</span>l<span>ii</span>t<span>z</span></a>
+        </div>
+        <nav class="navigation">
+            <ul class="nav-menu">
+                <li class="item"><a href="#">Quem somos</a> </li>
+                <li class="item"><a href="#">Contato</a> </li>
+                <li class="item button"><a class="home-btn" href="#">Comece um Projeto</a></li>
+                <li class="item login">
+                    Faça <a href="#">LOGIN</a> ou<br>
+                    crie seu <a href="#">CADASTRO</a>
+                    <div class=""></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!-- Fim Parte Superior do site -->
+
+    <div class="main-login">
 
         <!--Parte Direita do Site-->
+        <div class="right-login">
+            <div class="card-login">
+                <div id="msg_erro"></div>
+                <div id="msg_sucesso"></div>
+                <h1>Cadastro</h1>
+                <div class="textfield">
 
-            <div class="right-login">
-                <div class="card-login">
-                    <div id="msg_erro"></div>
-                    <div id="msg_sucesso"></div>
-                    <h1>Cadastro</h1>
-                    <div class="textfield">
-                        
-                        <label for="usuario">Nome Completo</label>
-                        <input type=" text" oninput="nameValidate()" class="input-required" name="Nome" placeholder="Nome">
-                        <span class="required">*O nome deve conter ao menos 5 caracteres.</span>
-                    </div>
-                    <div class="textfield">
-                        <label for="usuario">E-mail</label>
-                        <input type=" text" oninput="emailValidate()" class="input-required" name="usuario" placeholder="E-mail">
-                        <span class="required">*Digite um email válido.</span>
-                    </div>
-                    <div class="textfield">
-                        <label for="senha">Senha</label>
-                        <input type="password" oninput="senhaValidate()" class="input-required" id="input-required" name="senha" placeholder="Senha">
-                        <span class="required">*A sua senha deve ter no mínimo 8 digitos.</span>
-                    </div>
-                    <div class="textfield">
-                        <label for="senha">Senha Novamente</label>
-                        <input type="password" class="input-required" oninput=" repeteSenhaValidate()"  name="senha" placeholder="Senha">
-                        <span class="required">*As senhas devem ser identicas</span>
-                    </div>
-                    <button onclick="cadastrar()" class="btn-login">Cadastre-se</button>
+                    <label for="usuario">Nome Completo</label>
+                    <input type=" text" oninput="nameValidate()" class="input-required" name="Nome" placeholder="Nome">
+                    <span class="required">*O nome deve conter ao menos 5 caracteres.</span>
                 </div>
+                <div class="textfield">
+                    <label for="usuario">E-mail</label>
+                    <input type=" text" oninput="emailValidate()" class="input-required" name="usuario"
+                        placeholder="E-mail">
+                    <span class="required">*Digite um email válido.</span>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" oninput="senhaValidate()" class="input-required" id="input-required"
+                        name="senha" placeholder="Senha">
+                    <span class="required">*A sua senha deve ter no mínimo 8 digitos.</span>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha Novamente</label>
+                    <input type="password" class="input-required" oninput=" repeteSenhaValidate()" name="senha"
+                        placeholder="Senha">
+                    <span class="required">*As senhas devem ser identicas</span>
+                </div>
+                <button onclick="cadastrar()" class="btn-login">Cadastre-se</button>
             </div>
-          <!--Fim Direita do Site-->
+        </div>
+        <!--Fim Direita do Site-->
 
-          <!--Parte Esquerda do Site-->
-          <div class="left-login">
+        <!--Parte Esquerda do Site-->
+        <div class="left-login">
             <img src="./img/image_cadastro.svg" class="img" alt="image2">
         </div>
-    <!--Fim parte Esquerda do Site-->
-        </div>
-        
-        
-        
+        <!--Fim parte Esquerda do Site-->
+    </div>
 
-    </body>
-    
-    <script src="./js/cadastro.js"></script>
-    
+</body>
+    <!-- Java -->
+<script src="./js/cadastro.js"></script>
+    <!-- Java -->
 
 </html>

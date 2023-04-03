@@ -25,7 +25,9 @@ function logar(){
     }})
     
     if(digEmail.value == userValidado.email && digSenha.value == userValidado.senha && digEmail.value.length != 0 && digSenha.value.length != 0){
-        window.location.href = "./index.html"
+        window.location.href = "./usuario.html"
+        localStorage.setItem("usuarioLogado", JSON.stringify(userValidado))
+
     } else {
 
         digEmail.setAttribute("style", "border: 1px solid #e63636;")
@@ -38,3 +40,8 @@ function logar(){
     
 
 };
+
+var usuarioLogado = localStorage.getItem("usuarioLogado")
+
+
+

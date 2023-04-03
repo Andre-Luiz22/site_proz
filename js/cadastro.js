@@ -11,12 +11,12 @@ var msgErro = document.getElementById("msg_erro");
 var msgSucesso = document.getElementById("msg_sucesso");
 
 function setError(i){
-    campos[i].style.border = "2px solid #e63636";
+    campos[i].style.border = "1px solid #e63636";
     spans[i].style.display = "block"
 };
 
 function validada(i){
-    campos[i].style.border = "2px solid #008000 ";
+    campos[i].style.border = "1px solid #008000 ";
     spans[i].style.display = "none";
 };
 
@@ -27,7 +27,7 @@ function resetError(i){
 
 function nameValidate(){
     
-    if(campos[0].value.length>=5)
+    if(campos[0].value.trim().length>=5)
     {   
         validada(0);
         nomePren = true

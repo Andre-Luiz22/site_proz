@@ -1,0 +1,62 @@
+/*Configuração do espaçamento do main*/
+.content {
+    padding-top: 15vh;
+}
+
+/*Inicio da parte esquerda da página*/
+
+.home{        
+    min-width: 100%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(112, 21, 108, 0.133);
+}
+
+.text-h3{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #48b2c0;
+}
+
+.text-h1 {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 2%;
+}
+
+.texto {
+    font-size: 1.8rem;
+    color: #1e1c2a;
+    margin-bottom: 1rem;
+    
+}
+
+/*Estilização do botão*/
+
+.home-btn {
+    text-transform: uppercase;
+    padding:  2% 5%;
+    color: black;
+}
+
+.home-btn:hover {
+    color: #85bbc2;
+}
+
+@media  screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .home-text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-btn {
+        width: fit-content;
+        align-self: center;
+    }
+}

@@ -1,0 +1,28 @@
+/*Configuração da 2 parte do main_index*/
+.sobre {
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+/*Configuração da imagem*/
+
+.sobre__img {
+    width: 50%;
+    border-radius: 8%;
+}
+
+/*Parte responsiva*/
+
+@media screen and (max-width:768px) {
+    .sobre{
+        flex-direction: column;
+    }
+    
+    .sobre__img {
+        order: 2;
+        width: 80%;
+    }
+}

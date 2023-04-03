@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="=width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style_login.css">
-        <title>Login</title>
-    </head>
 
-    <body>
-        <div class="main-login">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="=width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="shortcut icon" href="./img/imagem3.ico" type="image/x-icon">
+    <title>Bliitz - Login</title>
+</head>
+
+<body>
+
+    <!-- Parte Superior do site -->
+    <header class="menu">
+        <div class="menu__logo">
+            <img class="menu__logo__img" src="img/imagem3.png">
+            <a href="index.html" class="menu__logo__titulo"><span>B</span>l<span>ii</span>t<span>z</span></a>
+        </div>
+        <nav class="navigation">
+            <ul class="nav-menu">
+                <li class="item"><a href="#">Quem somos</a> </li>
+                <li class="item"><a href="#">Contato</a> </li>
+                <li class="item button"><a class="home-btn" href="#">Comece um Projeto</a></li>
+                <li class="item login">
+                    Faça <a href="#">LOGIN</a> ou<br>
+                    crie seu <a href="#">CADASTRO</a>
+                    <div class=""></div>
+                </li>
+            </ul>
+        </nav>
+    <!--Fim Parte Superior do site -->
+
+    </header>
+    <div class="main-login">
         <!--Parte Esquerda do Site-->
-            <div class="left-login">
-                <img src="./img/image_login.svg" class="img" alt="image2">
-            </div>
+        <div class="left-login">
+            <img src="./img/image_login.svg" class="img" alt="image2">
+        </div>
         <!--Fim parte Esquerda do Site-->
 
         <!--Parte Direita do Site-->
-
-            <div class="right-login">
-                <div class="card-login">
-                    <div id="msg_erro"></div>
-                    <h1>Login</h1>
-                    <div class="textfield">
-                        <label for="usuario">E-mail</label>
-                        <input type=" text" id="email" name="usuario" placeholder="E-mail">
-                    </div>
-                    <div class="textfield">
-                        <label for="senha">Senha</label>
-                        <input type="password" id="senha" name="senha" placeholder="Senha">
-                    </div>
-                    <button onclick="logar()" class="btn-login">Login</button>
-                    <button class="btn-login"><a href="./cadastro.html">Cadastre-se</a></button>
-                    <p class="Esqueci"> Esqueci minha senha</p>
+        <div class="right-login">
+            <div class="card-login">
+                <div id="msg_erro"></div>
+                <h1>Login</h1>
+                <div class="textfield">
+                    <label for="usuario">E-mail</label>
+                    <input type=" text" id="email" name="usuario" placeholder="E-mail">
                 </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Senha">
+                </div>
+                <button onclick="logar()" class="btn-login">Login</button>
+                <button class="btn-login"><a href="./cadastro.html">Cadastre-se</a></button>
+                <p class="Esqueci"> Esqueci minha senha</p>
             </div>
-          <!--Fim Direita do Site-->
         </div>
-        
-        
-        
+        <!--Fim Direita do Site-->
+    </div>
 
-    </body>
-    
-    <script src="./js/login.js"></script>
+
+
+
+</body>
+
+<!-- Java -->
+
+<script src="./js/login.js"></script>
+
+<!-- Java -->
 
 </html>

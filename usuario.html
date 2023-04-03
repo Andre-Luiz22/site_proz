@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/usuario.css">
+    <link rel="shortcut icon" href="./img/imagem3.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/55bb241f8a.js" crossorigin="anonymous"></script>
+    <title>Bliitz - Meus Pedidos</title>
+</head>
+
+<body>
+        <!-- Parte Superior do site -->
+    <header class="menu">
+        <div class="menu__logo">
+            <img class="menu__logo__img" src="img/imagem3.png">
+            <a href="index.html" class="menu__logo__titulo"><span>B</span>l<span>ii</span>t<span>z</span></a>
+        </div>
+        <nav class="navigation">
+            <ul class="nav-menu">
+                <li class="item"><a href="#">Quem somos</a> </li>
+                <li class="item"><a href="#">Contato</a> </li>
+                <li class="item button"><a class="home-btn" href="./upload.html">Comece um Projeto</a></li>
+                <li class="item login">
+                    <a href="./usuario.html"><div class="logado"><i class="fa-solid fa-user"></i><p id="nome_usuario"></p></div></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <!-- Fim Parte Superior do site -->
+
+    <main class="content">
+
+        <!-- Parte Lateral do site -->
+        <nav class="menu_lateral">
+            <ul class="menu_lateral_funcoes">
+                <div class="menu_lateral_funcoes_opcoes">
+                    <li class="opcoes"> <a class="most" href="usuario.html"><i class="fa-solid fa-box-open"></i>Meus Pedidos</a></li>
+                    <li class="opcoes"> <a href="mensagem.html"><i class="fa-sharp fa-solid fa-lock"></i>Mensagens</a></li>
+                    <li class="opcoes"> <a href="./configuracao.html"><i class="fa-solid fa-gear"></i>Configurações</a></li>
+                    <li class="opcoes"> <a href="./seguranca.html"><i class="fa-solid fa-lock"></i>Segurança</a></li>
+                </div>
+                <li class="opcoes_des"><a class="deslog" href="./index.html"><i class="fa-solid fa-right-from-bracket"></i>Deslogar</a></li>
+            </ul>
+        </nav>
+        <!-- Fim Parte Lateral do site -->
+
+        <section class="conteudo">
+            <h1 class="conteudo__titulo">Meus Pedidos</h1>
+             <p> Os seus pedidos aparecerão nessa janela!<br>
+                 Qualquer dúvida entre em contato conosco. </p>
+        <div class="conteudo_li">
+             
+             <ul><li class="Pedido"><strong><i class="fa-solid fa-arrow-down"></i>Pedido Numero - 01 </strong><p class="ped">O Seu pedido foi entregue em seu E-mail </p>  </li>
+                 <li class="Pedido"><strong><i class="fa-solid fa-arrow-right"></i>Pedido Numero - 02 </strong>  </li>
+                 <li class="Pedido"><strong><i class="fa-solid fa-arrow-right"></i>Pedido Numero - 03 </strong>  </li>
+                 <li class="Pedido"><strong><i class="fa-solid fa-arrow-right"></i>Pedido Numero - 04 </strong>  </li>
+                 <li class="Pedido"><strong><i class="fa-solid fa-arrow-right"></i>Pedido Numero - 05 </strong>  </li>
+                 <li class="Pedido"><strong><i class="fa-solid fa-arrow-right"></i>Pedido Numero - 06 </strong>  </li>
+            </ul>
+            <img src="img/imagem4.png" class="imagem4">
+        </div>
+           
+        </section>
+
+        
+    </main>
+    <footer>
+
+        <!--Rodapé-->
+        <div class="container">
+            <div class="row_footer">
+                <div class="footer-col">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Ouvidoria</a></li>
+                        <li><a href="#">Atendimento ao Cliente</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Sobre</h3>
+                    <ul>
+                        <li><a href="#">Nosso time</a></li>
+                        <li><a href="#">Endereço</a></li>
+                        <li><a href="#">Empresa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Ajuda</h3>
+                    <ul>
+                        <li><a href="#">Tutoriais</a></li>
+                        <li><a href="#">Base Conhecimento</a></li>
+                        <li><a href="#">Reportar</a></li>
+                    </ul>
+                </div>
+                <div class="redes_sociais__div">
+                 <a href="https://www.instagram.com/bliitz_2023/"> <img src="img/instagram.png"  class="redes_sociais" /> </a>
+                    <img src="img/twitter.png" class="redes_sociais" />
+                    <img src="img/facebook.png" class="redes_sociais" />
+                    <img src="img/whatsapp.png" class="redes_sociais" />
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Rodapé-->
+
+</body>
+<script src="./js/nomeUsuario.js"></script>
+</html>

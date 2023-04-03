@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+@import url(./header.css);
+@import url(./reset.css);
+
+body{
+    font-family: 'Noto Sans', sans-serif ;
+    margin: 0;
+}
+
+body *{
+    box-sizing: border-box;
+
+}
+
+
+/*Configuração do header*/
+.menu {
+    height: 10vh;
+}
+
+.item{
+    display: none;
+}
+/*Fim da configuração do header*/
+
+/*Inicio da configuração da página como um todo*/
+.main-login{
+    
+    padding-top: 10vh;
+    padding-right: 2%;
+    padding-left: 2%;
+    background: #9bdddd ;
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+    height: 100vh;
+    align-items: center;
+}
+/*Fim da configuração da página como um todo*/
+
+/*Inicio da configuração da parte esquerda da página*/
+.left-login{
+    width: 50vh;
+}
+
+.left-login > h1{
+    color: #8cdbe6;
+    font-size: 3vw;
+}
+
+.img{
+    width: 43vw;
+    order: 1;
+    flex-shrink: 1;
+}
+/*Fim da configuração da parte esqueda do site*/
+
+
+/*Inicio da configuração da parte direita do site*/
+.right-login{
+    width: 40%;
+    height: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+}
+
+.card-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 30px 35px;
+    background:#37595e ;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #00000056;
+    height: 35rem;
+}
+
+.card-login > h1 {
+    font-size: 1.5rem;
+    color: #8cdbe6;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+/*Fim da configuração da parte direita do site*/
+
+/*Configuração dos inputs da página*/
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #485d69;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.textfield input ::placeholder{
+    color: #f0ffff94;
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #134750;
+    background: #8cdbe6;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #8cdbe6;
+}
+/*Fim Configuração dos inputs da página*/
+
+/*Textos que aparecem através de Java Script*/
+.required {
+    display: none;
+    color: red;
+    font-size: 12px;
+}
+
+#msg_erro {
+    text-align: center;
+    color: #FF0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    margin-bottom: 0.6rem;
+    border-radius: 4px;
+    width: 100%;
+    display: none;
+}
+
+#msg_sucesso {    
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    margin-bottom: 0.6rem;
+    border-radius: 4px;
+    width: 100%;
+    display: none;
+}
+/*Fim da configuração da parte direita do site*/
+
+
+/*Parte responsiva*/
+@media only screen and (max-width: 950px){
+    .main-login {
+        gap: 10%;
+    }
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-login{
+        gap: 5%;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .card-login {
+        flex-grow: 0;
+        height: 85vh;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .main-login{flex-direction:column ;
+    
+    }
+    .img {
+        display: none;
+    }
+
+    .left-login > h1 {
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    
+
+}
+/*Fim Parte responsiva*/

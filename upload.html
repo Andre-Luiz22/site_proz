@@ -3,12 +3,13 @@
 
 <head>
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/upload.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="./img/imagem3.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bliitz</title>
+    <script src="https://kit.fontawesome.com/55bb241f8a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/imagem3.ico" type="image/x-icon">
+    <title>Bliitz - Upload</title>
 </head>
 
 <body>
@@ -21,58 +22,35 @@
         </div>
         <nav class="navigation">
             <ul class="nav-menu">
-                <li class="item"><a href="#quem_somos">Quem somos</a> </li>
+                <li class="item"><a href="#">Quem somos</a> </li>
                 <li class="item"><a href="#">Contato</a> </li>
-                <li class="item button"><a class="home-btn" href="./login.html">Comece um Projeto</a></li>
+                <li class="item button"><a class="home-btn" href="#">Comece um Projeto</a></li>
                 <li class="item login">
-                    Faça <a href="./login.html">LOGIN</a> ou<br>
-                    crie seu <a href="./cadastro.html">CADASTRO</a>
-                    <div class=""></div>
+                    <a href="./usuario.html"><div class="logado"><i class="fa-solid fa-user"></i><p id="nome_usuario"></p></div></a>
                 </li>
             </ul>
         </nav>
-    </header>
     <!-- Fim Parte Superior do site -->
 
+    </header>
     <main class="content">
 
     <!-- Primeira Parte do site -->
         <section class="home">
-            <div class="home-text">
-                <h4 class="text-h3">Bem-vindo a <br> <span>B</span>l<span>ii</span>t<span>z</span>.c<span>o</span>m
-                    </h3>
-                    <h1 class="text-h1">Desenvolva de forma mais inteligente e entregue seus projetos com mais rapidez
-                    </h1>
-
-                    <p class="texto">Coloque sua criatividade em prática para transformar ideias em produtos.
-                        A Bliitz fornece as ferramentas necessárias para todos os seus projetos, seja um site de
-                        eCommerce profissional, uma rede social ou o que seu coração desejar!<br> <br> </p>
-
-                    <a href="./login.html" class="item button home-btn">Comece um Projeto</a>
+            <div class="text">
+                <h1 class="titulo">Upload do arquivo</h1>
+                <h3 class="subtitulo">Clique aqui e adicione seus arquivos</h3>
+                <div class="upload">
+                    <label for="arquivo">Adicionar arquivos</label>
+                    <input type="file" name="arquivo" id="arquivo">
+                </div>
             </div>
-            <img src="img/imagem1.png" class="foto1" />
+            <img class="content__img" src="img/drag_drop.svg" class="up" />
         </section>
-        <!-- Fim Parte Superior do site -->
-
-        <!-- Segunda Parte do site -->
-        <section class="sobre" id="quem_somos">
-            <img class="sobre__img" src="img/imagem2.png" class="foto2" />
-
-            <div class="sobre-texto">
-                <h4 class="text-h3">Quem somos? </h3>
-                    <h1 class=" text-h1">Conheça um pouco mais sobre nós!</h1>
-                    <p class="texto">Bliitz.com é uma plataforma líder de desenvolvimento web com milhões de usuários em
-                        todo o mundo.
-                        Ficou mais fácil para todo mundo criar uma presença online incrível e profissional.<br> <br>
-                    </p>
-
-            </div>
-        </section>
-        <!-- Fim Segunda Parte do site -->
+    <!-- Fim Primeira Parte do site -->
 
     </main>
-
-        <!-- Rodapé -->
+    <!-- Rodapé -->
     <footer>
         <div class="container">
             <div class="row_footer">
@@ -110,7 +88,6 @@
         </div>
     </footer>
     <!-- Rodapé -->
-
 </body>
-
+<script src="./js/nomeUsuario.js"></script>
 </html>
